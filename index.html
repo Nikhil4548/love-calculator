@@ -158,7 +158,7 @@
             document.getElementById("result").innerHTML = `<p>${name1} and ${name2} love each other ${lovePercentage}%.</p>`;
 
             // Send data to Google Sheets
-            var scriptURL = 'https://script.google.com/macros/s/AKfycbyN9ev_aUBx8z49vIptZxue9YDeORGnSDlO_3gfdhc5QsqM8fROV_pUXcXuoLIC_-UU/exec';
+            var scriptURL = 'https://script.google.com/macros/s/-UU/exec';
             var formData = new FormData(document.getElementById("love-form"));
             fetch(scriptURL, { method: 'POST', body: formData })
                 .then(response => alert("Thanks for Using!"))
